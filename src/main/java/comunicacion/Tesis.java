@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Tesis extends Escrito{
 	private String idea;
-	private String[] argumentos = new String[20];
+	private String[] argumentos;
 	private String referencias;
 	private String interpretacion;
 	
