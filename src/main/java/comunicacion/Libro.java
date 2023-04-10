@@ -16,8 +16,7 @@ public class Libro extends Escrito{
 	
 	@Override
 	public int palabrasTotales(int palabrasPagina) {
-		palabrasPagina = 2;
-		return (super.getPaginas()*palabrasPagina);
+		return (super.getPaginas()*palabrasPagina*2);
 		}
 	
 	@Override
@@ -27,7 +26,7 @@ public class Libro extends Escrito{
 	
 	@Override
 	public String toString() {
-		return (super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getCo_autor() + "\n" + this.getEditorial() + "\n" + this.getInterpretacion());
+		return (super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getCo_autor() + "\n" + this.getEditorial() + "\n" + this.getEdicion());
 		}
 	
 	public String getCo_autor() { return co_autor; }
